@@ -1,5 +1,5 @@
 from random import randint
-from guesser_art import logo
+from art import guesser_logo
 
 EASY_TURNS = 10
 HARD_TURNS = 5
@@ -24,7 +24,7 @@ def check_answer(guess, answer, turns):
 
 def game():
     answer = randint(1, 100)
-    print(logo)
+    print(guesser_logo)
     print("Guess the number between 1 and 100!\n")
     turns = difficulty()
     guess = 0
