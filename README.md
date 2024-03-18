@@ -14,3 +14,4 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 10 - Calculator (Functions with Outputs, Docstrings, Return)</li>
   <li>Day 11 - Blackjack (Review of Learned Concepts So Far)</li>
   <li>Day 12 - Guess the Random Number (Scope)</li>
+  <li>Day 13 - no direct project (Debugging)</li>
