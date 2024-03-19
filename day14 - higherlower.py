@@ -1,4 +1,4 @@
-from game_data import data
+from _hl_data import data
 from os import system
 import random
 import art
