@@ -77,7 +77,7 @@ Water: {resources["water"]}ml
 Milk: {resources["milk"]}ml
 Coffee: {resources["coffee"]}g''')
         if "money" in resources:
-            print(f"$" + str(resources["money"]))
+            print("$" + str(resources["money"]))
     elif request == "off":
         exit()
     elif request == "espresso" or request == "latte" or request == "cappuccino":
