@@ -60,21 +60,9 @@ def use_ingredients(drink):
 
 def check_ingredients(drink):
     '''Checks for sufficient amounts of all ingredients.'''
-    def each_ingredient(ingredient):
-        if ingredient in MENU[drink]["ingredients"]:
-            if resources[ingredient] < MENU[drink]["ingredients"][ingredient]:
-                return f"Insufficient {ingredient}."
-            return
-        return
-    water_check = each_ingredient("water")
-    milk_check = each_ingredient("milk")
-    coffee_check = each_ingredient("coffee")
-    if water_check is not None:
-        return water_check
-    elif milk_check is not None:
-        return milk_check
-    elif coffee_check is not None:
-        return coffee_check
+    for ingredient in MENU[drink]["ingredients"]:
+        if resources[ingredient] < MENU[drink]["ingredients"][ingredient]:
+            return f"Insufficient {ingredient}."
     return "Sufficient ingredients."
 
 
@@ -89,10 +77,10 @@ Water: {resources["water"]}ml
 Milk: {resources["milk"]}ml
 Coffee: {resources["coffee"]}g''')
         if "money" in resources:
-            print("$" + str(resources["money"]))
+            print(f"$" + str(resources["money"]))
     elif request == "off":
         exit()
-    else:
+    elif request == "espresso" or request == "latte" or request == "cappuccino":
         ingred = check_ingredients(request)
         if ingred == "Sufficient ingredients.":
             print("Please insert coins.")
@@ -113,6 +101,8 @@ Coffee: {resources["coffee"]}g''')
                 print(f"Thank you! Here's your {request}.")
         else:
             print(ingred)
+    else:
+        print("Invalid request.")
 
 MACHINE_RUNNING = True
 while MACHINE_RUNNING:
