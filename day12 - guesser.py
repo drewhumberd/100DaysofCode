@@ -1,5 +1,5 @@
 from random import randint
-from art import guesser_logo
+from supportfiles.art import guesser_logo
 
 EASY_TURNS = 10
 HARD_TURNS = 5

@@ -17,4 +17,7 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 13 - no direct project (Debugging)</li>
   <li>Day 14 - Higher/Lower Game (Review of Learned Concepts So Far)</li>
   <li>Day 15 - Coffee Machine (Review, Dev Environments)</li>
+  <li>Day 16 - Coffee Machine Redux (Object Oriented Programming)</li>
 </ul>
+
+Files in /supportfiles are course material provided for the purpose of completing the exercises.

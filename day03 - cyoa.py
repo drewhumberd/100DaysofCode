@@ -1,4 +1,4 @@
-from art import cyoa_logo
+from supportfiles.art import cyoa_logo
 print(cyoa_logo)
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.") 

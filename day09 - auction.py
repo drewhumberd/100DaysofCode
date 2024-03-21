@@ -1,5 +1,5 @@
 from os import system
-from art import auction_logo
+from supportfiles.art import auction_logo
 print(auction_logo)
 print("Welcome to the auction.")
 bid_list = {}

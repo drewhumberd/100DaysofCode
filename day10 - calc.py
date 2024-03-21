@@ -1,4 +1,4 @@
-from art import calc_logo
+from supportfiles.art import calc_logo
 
 # Calculator Functions
 

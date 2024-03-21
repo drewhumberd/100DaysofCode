@@ -1,7 +1,7 @@
-from _hl_data import data
+from supportfiles._hl_data import data
 from os import system
 import random
-import art
+from supportfiles.art import hl_logo, hl_vs
 
 def get_contestant():
     contestant = random.choice(data)
@@ -33,13 +33,13 @@ is_playing = True
 replay = False
 
 def maingame():
-    print(art.hl_logo)
+    print(hl_logo)
     if replay == True:
         contestant_a = nextround
     else:
         contestant_a = get_contestant()
     print(f"Compare A: {contestant_string(contestant_a)}")
-    print(art.hl_vs)
+    print(hl_vs)
     contestant_b = get_contestant()
     print(f"To B: {contestant_string(contestant_b)}")
     guess = input("Which do you think has more Instagram followers? Choose A or B: ")
