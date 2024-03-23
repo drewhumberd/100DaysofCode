@@ -18,7 +18,8 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 14 - Higher/Lower Game (Review of Learned Concepts So Far)</li>
   <li>Day 15 - Coffee Machine (Review, Dev Environments)</li>
   <li>Day 16 - Coffee Machine Redux (Object Oriented Programming)</li>
-  <li>Day 17 - Trivia Quiz Bot (Object Creation and Modification) <i>(I taught myself the API use to make this one dynamic)</i>
+  <li>Day 17 - Trivia Quiz Bot (Object Creation and Modification) <i>(I taught myself the API use to make this one dynamic)</i></li>
+  <li>Day 18 - Various Turtle Exercises (Turtle Module and GUI)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
