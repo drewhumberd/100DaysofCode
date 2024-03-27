@@ -22,6 +22,7 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 18 - Various Turtle Exercises (Turtle Module and GUI)</li>
   <li>Day 19 - Turtle Races/Etch-a-Sketch (More Turtle Work / Object Instances, Higher Order Functions)
   <li>Day 20-21 - Snake Game (Coordinates, Animation, Class Inheritance, Slicing)</li>
+  <li>Day 22 - Pong (Review of Classes, Turtle)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
