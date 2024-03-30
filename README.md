@@ -24,6 +24,7 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 20-21 - Snake Game (Coordinates, Animation, Class Inheritance, Slicing)</li>
   <li>Day 22 - Pong (Review of Classes, Turtle)</li>
   <li>Day 23 - Turtle Crossing (Turtle Capstone Project)</li>
+  <li>Day 24 - Snake High Scores / Mail Merge (File Operations)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
