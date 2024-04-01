@@ -31,9 +31,6 @@ while len(guessed_states) < 50:
                                     prompt="What's a state name? Exit to quit").title()
     answer_checker()
 screen.mainloop()
-missed_states = []
-for state in all_states:
-    if state not in guessed_states:
-        missed_states.append(state)
+missed_states = [state for state in all_states if state not in guessed_states]
 states_ser = pandas.DataFrame(missed_states)
 states_ser.to_csv("missed_states.csv")

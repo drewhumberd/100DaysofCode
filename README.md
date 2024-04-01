@@ -26,6 +26,7 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 23 - Turtle Crossing (Turtle Capstone Project)</li>
   <li>Day 24 - Snake High Scores / Mail Merge (File Operations)</li>
   <li>Day 25 - US States Guessing Game (Pandas and Data Operations)</li>
+  <li>Day 26 - NATO Alphabet Translation (List/Dictionary Translation)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
