@@ -28,6 +28,7 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 25 - US States Guessing Game (Pandas and Data Operations)</li>
   <li>Day 26 - NATO Alphabet Translation (List/Dictionary Translation)</li>
   <li>Day 27 - Miles to KM Converter (Tkinter, Indefinite Arguments)</li>
+  <li>Day 28 - Pomodoro Timer (Advanced Tkinter and Timing)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
