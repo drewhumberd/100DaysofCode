@@ -1,7 +1,8 @@
-from tkinter import *
-from tkinter import messagebox
+import json
+from tkinter import messagebox, Tk, Canvas, Label, Entry, Button, PhotoImage, END
 from random import randint, shuffle, choice
 from pyperclip import copy
+
 FONT = ("sans-serif", 10, "normal")
 BGCOLOR = "#2c343a"
 
@@ -29,7 +30,12 @@ def save_password():
     website = website_field.get()
     username = email_field.get()
     password = password_field.get()
-    password_line = f"{website} | {username} | {password}"
+    password_dict = {
+        website: {
+            "email": username,
+            "password": password,
+        }
+    }
 
     if len(website) == 0 or len(password) == 0:
         messagebox.showerror(title="Error", message="Please don't leave any fields empty!")
@@ -37,12 +43,38 @@ def save_password():
         isok = messagebox.askokcancel(title=website, message=f"Save {username} as username \n" 
                             f"and {password} as password?")
         if isok:
-            with open("file.txt", "a") as file:
-                file.write(password_line)
-                file.write("\n")
-            website_field.delete(0, END)
-            email_field.delete(0, END)
-            password_field.delete(0, END)
+            try:
+                with open("data.json", "r") as file:
+                    data = json.load(file)
+            except FileNotFoundError:
+                with open("data.json", "w") as file:
+                    json.dump(password_dict, file, indent=4)
+            else:
+                data.update(password_dict)
+                with open("data.json", "w") as file:
+                    json.dump(data, file, indent=4)
+            finally:
+                website_field.delete(0, END)
+                password_field.delete(0, END)
+# ---------------------------- SEARCH ------------------------------- #
+def search():
+    website = website_field.get()
+    try:
+        with open("data.json", "r") as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        messagebox.showerror(title="Error", message="No password file found.")
+    else:
+        try:
+            passdata = data[website]
+        except KeyError:
+            messagebox.showerror(title="Error", message="Website not found.")
+        else:
+            messagebox.showinfo(title="Password", message=f"Email: {passdata['email']}\n"
+                                f"Password: {passdata['password']}")
+    finally:
+        website_field.delete(0, END)
+
 # ---------------------------- UI SETUP ------------------------------- #
 
 window = Tk()
@@ -57,9 +89,12 @@ logo.grid(row=0, column=1)
 website_label = Label(text="Website:", font=FONT, fg="white", bg=BGCOLOR)
 website_label.grid(row=1, column=0, sticky="e", ipady=3)
 
-website_field = Entry(width=50)
-website_field.grid(row=1, column=1, columnspan=2, sticky="w")
+website_field = Entry(width=30)
+website_field.grid(row=1, column=1, sticky="w")
 website_field.focus()
+
+search_button = Button(text="Search", command=search, width=14)
+search_button.grid(row=1, column=2, sticky="w")
 
 email_label = Label(text="Email/Username:", font=FONT, fg="white", bg=BGCOLOR)
 email_label.grid(row=2, column=0, sticky="e", ipady=3)
