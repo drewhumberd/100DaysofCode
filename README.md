@@ -32,6 +32,7 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 29 - Password Manager (More Tkinter)</li>
   <li>Day 30 - Password Manager/NATO Alphabet 2.0 (Error Handling, JSON)</li>
   <li>Day 31 - Gaelic Flash Cards (Tkinter/Data Handling Capstone)</li>
+  <li>Day 32 - Motivational Quotes/Birthday Emailer (smtplib and datetime)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
