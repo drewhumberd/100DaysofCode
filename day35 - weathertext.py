@@ -20,6 +20,8 @@ parameters = {
 response = requests.get(weather_endpoint, params=parameters)
 response.raise_for_status()
 data = response.json()
+from_number = os.environ.get("TWILIO_NUMBER")
+to_number = os.environ.get("CELL_NUMBER")
 forecast = data["list"]
 weather_list = [x["weather"][0]["id"] for x in forecast]
 for x in weather_list:
