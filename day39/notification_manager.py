@@ -1,4 +1,5 @@
 import os
+import smtplib
 from twilio.rest import Client
 
 account_sid = os.environ.get("TWILIO_ID")
@@ -19,3 +20,14 @@ class NotificationManager:
             to=to_number
         )
         print(send_text.sid)
+
+    def send_emails(self, emails, message):
+        with smtplib.SMTP(EMAIL_PROVIDER_SMTP_ADDRESS) as connection:
+            connection.starttls()
+            connection.login(MY_EMAIL, MY_PASSWORD)
+            for email in emails:
+                connection.sendmail(
+                    from_addr=MY_EMAIL,
+                    to_addrs=email,
+                    msg=f"Subject:New Low Price Flight!\n\n{message}".encode('utf-8')
+                )
