@@ -41,6 +41,8 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 38 - Natural Language Workout Tracker (API Review)</li>
   <li>Day 39 - Flight Deal Tracker (API Capstone)</li>
   <li>Day 40 - Expanded Flight Deal Tracker (API Capstone)</li>
+  <li>Days 41-44 were basic HTML.</li>
+  <li>Day 45 - Top 100 Movies (Web Scraping)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
