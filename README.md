@@ -46,6 +46,8 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 46 - Spotify Playlist Maker (Web Scraping, API)</li>
   <li>Day 47 - Amazon Price Tracker (Web Scraping, Email)</li>
   <li>Day 48 - Cookie Clicker Bot (Selenium)</li>
+  <li><i>Skipped several days as projects focused on real social media use</i></li>
+  <li>Day 53 - Data Entry (Web Scraping/Selenium Capstone)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
