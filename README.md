@@ -51,6 +51,7 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 55 - Higher/Lower Game again (Flask)</li>
   <li>Day 56 - Business Card Site (Flask and HTML Templates)</li>
   <li>Day 57 - Blog Site (Flask and Jinja)</li>
+  <li>Day 58-59 - Blog Site (Incorporating Flask/Jinja with Bootstrap)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
