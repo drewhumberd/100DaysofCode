@@ -53,6 +53,8 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 57 - Blog Site (Flask and Jinja)</li>
   <li>Day 58-59 - Blog Site (Incorporating Flask/Jinja with Bootstrap)</li>
   <li>Day 60 - Updated Contact Form on Blog Site (Forms and POST with Flask)</li>
+  <li>Day 61 - Login Site (WTForms and Flask)</li>
+  <li>Day 62 - Coffee and Wifi (Advanced WTForms Implementation)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
