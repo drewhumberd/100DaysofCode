@@ -55,6 +55,10 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 60 - Updated Contact Form on Blog Site (Forms and POST with Flask)</li>
   <li>Day 61 - Login Site (WTForms and Flask)</li>
   <li>Day 62 - Coffee and Wifi (Advanced WTForms Implementation)</li>
+  <li>Day 63 - Book Ratings (SQLite and Flask)</li>
+  <li>Day 64 - Movie Ratings (SQLite, Flask, Bootstrap)</li>
+  <li>Day 65-66 - Coffee and Wifi (API Building)</li>
+  <li>Day 67 - Blog Site (SQLite, WTForms, Flask)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
