@@ -59,6 +59,7 @@ This repo is for projects created in Angela Yu's Udemy Python Bootcamp, availabl
   <li>Day 64 - Movie Ratings (SQLite, Flask, Bootstrap)</li>
   <li>Day 65-66 - Coffee and Wifi (API Building)</li>
   <li>Day 67 - Blog Site (SQLite, WTForms, Flask)</li>
+  <li>Day 68 - Login Site (Flask and Authentication)</li>
 </ul>
 
 Files in /supportfiles are course material provided for the purpose of completing the exercises.
